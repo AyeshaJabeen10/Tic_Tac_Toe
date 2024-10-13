@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    line-height: 30px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #524747;
+    border-radius: 5px;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+h1 {
+    margin-bottom: 20px;
+    /*margin-left: 550px;*/
+    font-size: 40px;
+    text-align: center;
+    /*background-color: #d8d0d0;*/
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #d8d0d0;
+    color: #0f0e0ed7;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: #333;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+#status {
+    margin-bottom: 20px;
+    font-size: 18px;
+    min-height: 24px;
+}
+
+#restart-btn {
+    margin-top: 20px;
+}
